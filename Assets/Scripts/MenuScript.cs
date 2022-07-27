@@ -6,11 +6,15 @@ using UnityEngine.SceneManagement;
 public class MenuScript : MonoBehaviour
 {
     public string levelName;
+    
 
     public void NextLevel()
     {
         //Use SceneManager to move to next Level
         //Make sure you connect it to Button
+        SceneManager.LoadScene(levelName); 
+
     }
+    
 
 }
